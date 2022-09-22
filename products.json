@@ -1,6 +1,7 @@
 [
     {
         "name": "Pizza, tuna, processed in FR | Chilled | Cardboard | Oven | at consumer/FR [Ciqual code: 26270]",
+        "mass": 1,
         "steps": [
             {
                 "name": "consumer",
@@ -9,44 +10,65 @@
                         "category": "material",
                         "processName": "Pizza, tuna, processed in FR | Chilled | Cardboard | at supermarket/FR",
                         "comment": "Modelled parameters: Edible fraction = 1.0, Raw-to-cooked fraction = 1.0",
-                        "amount": 1.0,
+                        "amount": {
+                            "unit": "kg",
+                            "value": 1.0
+                        },
                         "mainProcess": true
                     },
                     {
                         "category": "energy",
                         "processName": "Electricity, low voltage {FR}| market for | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Cooling at consumer",
-                        "amount": 0.0777
+                        "amount": {
+                            "unit": "kWh",
+                            "value": 0.0777
+                        }
                     },
                     {
                         "category": "energy",
                         "processName": "Electricity, low voltage {FR}| market for | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Electricity for food preparation",
-                        "amount": 1.0
+                        "amount": {
+                            "unit": "kWh",
+                            "value": 1.0
+                        }
                     },
                     {
                         "category": "transport",
                         "processName": "Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Transport of packaging waste to sorting centre (18 km)",
-                        "amount": 0.0018000000000000002
+                        "amount": {
+                            "unit": "ton.km",
+                            "value": 0.0018000000000000002
+                        }
                     },
                     {
                         "category": "waste treatment",
                         "processName": "Paper (waste treatment) {GLO}| recycling of paper | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Recycling of paper and cardboard packaging material based on data from France (AGB)",
-                        "amount": 0.065
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.065
+                        }
                     },
                     {
                         "category": "waste treatment",
                         "processName": "Waste paperboard {CH}| treatment of, inert material landfill | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Landfilling of paper and cardboard packaging material based on data from France (AGB)",
-                        "amount": 0.01575
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.01575
+                        }
                     },
                     {
                         "category": "waste treatment",
                         "processName": "Waste paperboard {CH}| treatment of, municipal incineration with fly ash extraction | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Incineration of paper and cardboard packaging material based on data from France (AGB)",
-                        "amount": 0.01925
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.01925
+                        }
                     }
                 ]
             },
@@ -57,50 +79,74 @@
                         "category": "material",
                         "processName": "Pizza, tuna, processed in FR | Chilled | Cardboard | at distribution/FR",
                         "comment": "Includes losses, for product group \"Prepared/processed meals (chilled)\" based on PEF",
-                        "amount": 1.05263157894737,
+                        "amount": {
+                            "unit": "kg",
+                            "value": 1.05263157894737
+                        },
                         "mainProcess": true
                     },
                     {
                         "category": "material",
                         "processName": "Tap water {Europe without Switzerland}| market for | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Water use at supermarket, derived from retail energy default for: 'Chilled' products and product density of 1.0 kg/l",
-                        "amount": 0.2106
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.2106
+                        }
                     },
                     {
                         "category": "energy",
                         "processName": "Electricity, low voltage {FR}| market for | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Energy consumption at supermarket, derived from retail energy default for: 'Chilled' products and product density of 1.0 kg/l",
-                        "amount": 0.046154
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.046154
+                        }
                     },
                     {
                         "category": "energy",
                         "processName": "Electricity, low voltage {FR}| market for | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Cooling at supermarket, derived from retail energy default for: 'Chilled' products and product density of 1.0 kg/l",
-                        "amount": 0.21923
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.21923
+                        }
                     },
                     {
                         "category": "transport",
                         "processName": "Transport, freight, lorry with refrigeration machine, 7.5-16 ton, EURO5, R134a refrigerant, cooling {GLO}| transport, freight, lorry with refrigeration machine, 7.5-16 ton, EURO5, R134a refrigerant, cooling | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Transport to supermarket",
-                        "amount": 0.165
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.165
+                        }
                     },
                     {
                         "category": "waste treatment",
                         "processName": "Biowaste {GLO}| treatment of biowaste, municipal incineration | Cut-off, S - Copied from Ecoinvent",
                         "comment": "30% of food losses during retail to incineration",
-                        "amount": 0.0157894736842105
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.0157894736842105
+                        }
                     },
                     {
                         "category": "waste treatment",
                         "processName": "Biowaste {RoW}| treatment of biowaste, industrial composting | Cut-off, S - Copied from Ecoinvent",
                         "comment": "3.4% of food losses during retail to composting",
-                        "amount": 0.00178947368421052
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.00178947368421052
+                        }
                     },
                     {
                         "category": "waste treatment",
                         "processName": "Biowaste {RoW}| treatment of biowaste by anaerobic digestion | Cut-off, S - Copied from Ecoinvent",
                         "comment": "16.6% of food losses during retail to digestion",
-                        "amount": 0.00873684210526315
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.00873684210526315
+                        }
                     }
                 ]
             },
@@ -111,38 +157,56 @@
                         "category": "material",
                         "processName": "Pizza, tuna, processed in FR | Chilled | Cardboard | at packaging/FR",
                         "comment": "Includes losses at distribution",
-                        "amount": 1.05263157894737,
+                        "amount": {
+                            "unit": "kg",
+                            "value": 1.05263157894737
+                        },
                         "mainProcess": true
                     },
                     {
                         "category": "material",
                         "processName": "Tap water {Europe without Switzerland}| market for | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Water use at distribution, derived from distribution water use default for: 'Chilled' products and product density of 1.0 kg/l",
-                        "amount": 0.0003694736842105269
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.0003694736842105269
+                        }
                     },
                     {
                         "category": "energy",
                         "processName": "Electricity, low voltage {FR}| market for | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Energy consumption at distribution, derived from distribution energy default for: 'Chilled' products and product density of 1.0 kg/l",
-                        "amount": 0.000910526315789475
+                        "amount": {
+                            "unit": "kWh",
+                            "value": 0.000910526315789475
+                        }
                     },
                     {
                         "category": "energy",
                         "processName": "Electricity, low voltage {FR}| market for | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Cooling at distribution, derived from distribution energy default for: 'Chilled' products and product density of 1.0 kg/l",
-                        "amount": 0.00242947368421053
+                        "amount": {
+                            "unit": "kWh",
+                            "value": 0.00242947368421053
+                        }
                     },
                     {
                         "category": "energy",
                         "processName": "Heat, central or small-scale, natural gas {Europe without Switzerland}| market for heat, central or small-scale, natural gas | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Heating at distribution, derived from distribution energy default for: 'Chilled' products and product density of 1.0 kg/l",
-                        "amount": 0.010931578947368436
-                    }
-                {
+                        "amount": {
+                            "unit": "kWh",
+                            "value": 0.010931578947368436
+                        }
+                    },
+                    {
                         "category": "transport",
                         "processName": "Transport, freight, lorry with refrigeration machine, 7.5-16 ton, EURO5, R134a refrigerant, cooling {GLO}| transport, freight, lorry with refrigeration machine, 7.5-16 ton, EURO5, R134a refrigerant, cooling | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Transport to distribution, includes mass of packaging material",
-                        "amount": 0.5210526315789481
+                        "amount": {
+                            "unit": "ton.km",
+                            "value": 0.5210526315789481
+                        }
                     }
                 ]
             },
@@ -153,32 +217,47 @@
                         "category": "material",
                         "processName": "Pizza, tuna, at plant",
                         "comment": "No losses assumed at packaging",
-                        "amount": 1.05263157894737,
+                        "amount": {
+                            "unit": "kg",
+                            "value": 1.05263157894737
+                        },
                         "mainProcess": true
                     },
                     {
                         "category": "material",
                         "processName": "Corrugated board box {RER}| production | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Cardboard for packaging material",
-                        "amount": 0.105263157894737
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.105263157894737
+                        }
                     },
                     {
                         "category": "transport",
                         "processName": "Transport, freight, lorry 16-32 metric ton, euro6 {RER}| market for transport, freight, lorry 16-32 metric ton, EURO6 | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Transport of all packaging materials (350 km for glass, 230 km for all other materials), based on PEF guidance document",
-                        "amount": 0.02421052631578951
+                        "amount": {
+                            "unit": "ton.km",
+                            "value": 0.02421052631578951
+                        }
                     },
                     {
                         "category": "transport",
                         "processName": "Transport, freight train {RER}| market group for transport, freight train | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Transport of all packaging materials (39 km for glass, 280 km for all other materials), based on PEF guidance document",
-                        "amount": 0.029473684210526357
+                        "amount": {
+                            "unit": "ton.km",
+                            "value": 0.029473684210526357
+                        }
                     },
                     {
                         "category": "transport",
                         "processName": "Transport, freight, inland waterways, barge {RER}| processing | Cut-off, S - Copied from Ecoinvent",
                         "comment": "Transport of all packaging materials (87 km for glass, 360 km for all other materials), based on PEF guidance document",
-                        "amount": 0.03789473684210532
+                        "amount": {
+                            "unit": "ton.km",
+                            "value": 0.03789473684210532
+                        }
                     }
                 ]
             },
@@ -189,46 +268,165 @@
                         "category": "material",
                         "processName": "Mozzarella cheese, from cow's milk, at plant",
                         "comment": "",
-                        "amount": 0.26842105263157934
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.26842105263157934
+                        }
                     },
                     {
                         "category": "material",
                         "processName": "Olive oil, at plant",
                         "comment": "",
-                        "amount": 0.029789473684210567
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.029789473684210567
+                        }
                     },
                     {
                         "category": "material",
                         "processName": "Tuna, fillet, raw, at processing",
                         "comment": "",
-                        "amount": 0.1494736842105265
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.1494736842105265
+                        }
                     },
                     {
                         "category": "material",
                         "processName": "Water, municipal",
                         "comment": "",
-                        "amount": 0.09978947368421066
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.09978947368421066
+                        }
                     },
                     {
                         "category": "material",
                         "processName": "Wheat flour, at industrial mill",
                         "comment": "",
-                        "amount": 0.1684210526315792
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.1684210526315792
+                        }
                     },
                     {
                         "category": "material",
                         "processName": "Tomato, for processing, peeled, at plant",
                         "comment": "",
-                        "amount": 0.42526315789473745
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.42526315789473745
+                        }
                     },
                     {
                         "category": "processing",
                         "processName": "Cooking, industrial, 1kg of cooked product/ FR U",
                         "comment": "",
-                        "amount": 1.05263157894737
+                        "amount": {
+                            "unit": "kg",
+                            "value": 1.05263157894737
+                        }
                     }
                 ]
             }
         ]
+    },
+    {
+        "name": "Cape",
+        "mass": 0.95,
+        "steps": [
+            {
+                "name": "materials",
+                "processes": [
+                    {
+                        "category": "material",
+                        "processName": "Coton",
+                        "amount": {
+                            "unit": "kg",
+                            "value": 1.522
+                        }
+                    },
+                    {
+                        "category": "waste treatment",
+                        "processName": "",
+                        "comment": "",
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.145
+                        }
+                    },
+                    {
+                        "category": "transport",
+                        "processName": "Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, S - Copied from Ecoinvent",
+                        "comment": "",
+                        "amount": {
+                            "unit": "ton.km",
+                            "value": 0.6885
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "spinning",
+                "processes": []
+            },
+            {
+                "name": "fabric",
+                "processes": [
+                    {
+                        "category": "material",
+                        "processName": "coton at spinning",
+                        "amount": {
+                            "unit": "kg",
+                            "value": 1.267
+                        }
+                    },
+                    {
+                        "category": "energy",
+                        "processName": "Electricity, low voltage {FR}| market for | Cut-off, S - Copied from Ecoinvent",
+                        "amount": {
+                            "unit": "kWh",
+                            "value": 4.27
+                        }
+                    },
+                    {
+                        "category": "transport",
+                        "processName": "Transport, freight, lorry 16-32 metric ton, EURO5 {RER}| transport, freight, lorry 16-32 metric ton, EURO5 | Cut-off, S - Copied from Ecoinvent",
+                        "comment": "",
+                        "amount": {
+                            "unit": "ton.km",
+                            "value": 0.6335
+                        }
+                    },
+                    {
+                        "category": "waste treatment",
+                        "processName": "",
+                        "comment": "This is a percentage? Convert to kg",
+                        "amount": {
+                            "unit": "kg",
+                            "value": 0.079
+                        }
+                    }
+                ]
+            }
+        ]
+        "making": {
+            "processUuid": "7fe48d7c-a568-4bd5-a3ac-cfa88255b4fe",
+            "fadable": false,
+            "pcrWaste": 0.2
+        },
+        "use": {
+            "ironingProcessUuid": "b877ae15-96e0-43aa-bafa-a6abcfedbca3",
+            "nonIroningProcessUuid": "86db560b-d31f-4745-a01e-ec74be00f865",
+            "daysOfWear": 100,
+            "defaultNbCycles": 5,
+            "ratioDryer": 0.25,
+            "ratioIroning": 0.05,
+            "timeIroning": 0.067,
+            "wearsPerCycle": 20
+        },
+        "endOfLife": {
+            "volume": 0.015
+        }
     }
 ]
